@@ -1,0 +1,128 @@
+
+@font-face {
+    font-family: 'Playfair display italic';
+    src: url('fonts/PlayfairDisplay-Italic-VariableFontwght.woff2') format('woff2'),
+      url('fonts/PlayfairDisplay-Italic-VariableFontwght.woff') format('woff');
+}
+@font-face {
+    font-family: 'Playfair display';
+    src: url('fonts/PlayfairDisplay-VariableFontwght.woff2') format('woff2'),
+    url('fonts/PlayfairDisplay-VariableFontwght.woff') format('woff');
+}
+
+body{margin:0;width:830px;margin:0 auto;}
+audio{
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  width: 100px;
+}
+
+#prueba{
+  position: absolute;
+  top: 47.5%;
+  left: 47.5%;
+  border-radius: 50%;
+  border: none;
+  font-family: 'Playfair display';
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+p{
+  width:400px;
+  margin-right:5px;
+  text-align:justify;
+  overflow:hidden;
+  float:left;
+  font-family: 'Playfair display';
+  font-size: 16px;
+font-variation-settings: 'wght' 450;
+}
+p:before{
+  content:'';
+  width: 200px;
+  height: 600px;
+}
+.izda:before{
+  float:right;
+  shape-outside: circle(40% at 100% 50%);
+}
+.dcha:before{
+  float:left;
+  shape-outside: circle(40% at 0 50%);
+}
+#rise, #rise2, #rise3, #rise4, #rise5, #rise6, #rise7{
+    display: block;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    position: absolute;
+    font-size: 20px;
+    top: 48%;
+    left: 46%;
+    z-index: 2;
+    font-family: 'Playfair display italic';
+    font-variation-settings: 'wght' 600;
+}
+#rise, #rise3{
+  padding-left: 11px;
+}
+#rise4, #rise5, #rise6, #rise7{
+  padding-left: 18px;
+}
+
+#rise.fadein{
+    opacity: 1;
+}
+
+#rise.fadeout{
+  opacity: 0;
+}
+
+#rise2.fadein{
+  opacity: 1;
+}
+
+#rise2.fadeout{
+opacity: 0;
+}
+
+#rise3.fadein{
+  opacity: 1;
+}
+
+#rise3.fadeout{
+opacity: 0;
+}
+
+#rise4.fadein{
+  opacity: 1;
+}
+
+#rise4.fadeout{
+opacity: 0;
+}
+
+#rise5.fadein{
+  opacity: 1;
+}
+
+#rise5.fadeout{
+opacity: 0;
+}
+
+#rise6.fadein{
+  opacity: 1;
+}
+
+#rise6.fadeout{
+opacity: 0;
+}
+
+#rise7.fadein{
+  opacity: 1;
+}
+
+#rise7.fadeout{
+opacity: 0;
+}
